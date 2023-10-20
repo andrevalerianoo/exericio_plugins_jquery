@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="stily">
+    <h1>Formulário de Cadastro</h1>
+
+    <form id="perfect">
+        <div>
+            <input type="text" placeholder="Nome Completo" required/>
+        </div>
+        <div>
+            <input type="text" placeholder="E-mail" required/>
+        </div>
+        <div>
+            <input  type="tel" id="campo-tel" placeholder="Telefone" required/>
+        </div>
+        <div>
+            <input id="campo-cpf" type="number" placeholder="CPF" required/>
+        </div>
+        <div>
+            <input id="campo-cep" type="number" placeholder="Cep" required/>
+        </div>
+        <div>
+            <input type="text" placeholder="Endereço" required/>
+        </div>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('#campo-tel').mask('(00)0000-0000')
+    
+    });
+    
+</script>
+</body>
+</html>
